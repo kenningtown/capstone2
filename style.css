@@ -1,0 +1,348 @@
+*{
+    padding:0;
+    margin:0;
+    text-decoration:none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.navbar{
+  /*
+    display: flex;
+    justify-content: center;
+*/
+    background-color:whitesmoke;
+    position: fixed;
+    border: 4px solid #00308F;
+    height:80px;
+    width: 100%;
+    z-index: 1;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 50px;
+    margin-top: -4px;
+    font-size: 35px;
+    font-family: 'Bebas Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+#navbar svg{
+    padding-top: 10px;
+    height: 48px;
+    width: 48px;
+    margin-top: 5px;
+    margin-left: 10px;
+    color: #00308F;
+}
+
+#navbar label{
+    
+    font-size: 3em;
+    color:#00308F;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight:bold;
+    line-height: 80px;
+    padding-bottom: 7px;
+}
+
+
+
+.navbar a:visited{
+    color:#00308F;
+}
+
+.navbar ul li a:hover{
+    background: gainsboro;
+    transition: .5s;
+}
+
+nav ul li a{
+    color:#00308F;
+}
+
+
+@media(max-width:768px){
+  .navbar{
+    height: auto;
+    position: unset;
+  }
+
+  #navbar svg, #navbar label{
+    font-size: 31px;
+    height: 35px;
+    width: 35px;
+
+  }
+
+
+
+ nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 200px;
+  width: 100%;
+  }
+
+  
+
+}
+
+
+
+
+#myspace>div{
+    /*
+    background: url(spaceblue.jpg);
+    background-size: cover;
+    height: 900px;
+    */
+    background: linear-gradient(to top, #09203f 0%, #537895 100%);
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+
+}
+
+#myspace h1{
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 100px;
+    color: azure;
+    margin-left: 210px;
+}
+
+#myspace h2{
+    font-family: 'Josefin Sans', sans-serif;
+    color: azure;
+    margin-left: 290px;
+    margin-top: 40px;
+    font-size: 1.5em;
+}
+
+#me>div{
+    /*
+    background: radial-gradient(circle at 1.3% 2.8%, rgb(239, 249, 249) 0%, rgb(182, 199, 226) 100.2%);
+    */
+    background: #d5def5; 
+    height: 600px;
+    
+}
+
+
+
+/*
+.me{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+
+}
+*/
+
+.me{
+    display: inline-block;
+    width: 100%;
+    height:400px;
+
+}
+
+.circle-container {
+    width: 400px; /* Set the width and height to control the size of the circle */
+    height: 400px;
+    border: 5px solid rgb(10, 10, 67); /* Add the border to the container */
+    border-radius: 50%; /* Create a circle using border-radius */
+    overflow: hidden; /* Clip the image to the circle */
+    float: left;
+    margin-top: 50px;
+    margin-left: 80px;
+  }
+  
+
+  .circle-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    clip-path: circle();
+    float: left;
+    
+ 
+}
+
+.me>h1 {
+    flex: 1; /* Allow the h1 to grow and fill the remaining space */
+     /* Add some spacing between the h1 and the other elements */
+    text-align: center; /* Center the h1 within its flex container */
+    margin-bottom: 60px;
+    margin-top: 70px;
+    font-size: 70px;
+    margin-left: 610px;
+    
+  }
+  
+ .me>p {
+    float: right;
+    width: 45%;
+    flex: 1; /* Allow the paragraph to grow and fill the remaining space */
+    margin: 0 120px; /* Add some spacing between the paragraph and the other elements */
+    font-size: 25px;
+    font-family: 'Frank Ruhl Libre', serif;
+  }
+
+  #projects{
+    height: 720px;
+    width: 100%;
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);  }
+
+
+  .pro>h1{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 65px;
+    color: white;
+  }
+
+  .pics{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+  }
+
+
+  .pics img{
+    border: 5px dashed rgb(255, 255, 255);
+    width: 350px;
+    height: 300px;
+  }
+
+  .pics .dog{
+    width:420px;
+  }
+
+  .pics .mond{
+    width:400px
+  }
+
+  .pics .price{
+    width:410px;
+  }
+
+  .titles{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 24px;
+    font-size: 24px;
+    margin-right: 30px;
+  }
+
+  .titles h3{
+    color: white;
+    
+  }
+
+  .descriptions{
+    display: flex;
+    justify-content: space-around;
+    font-size: 22px;
+    margin-top: 21px;
+    font-family: 'Frank Ruhl Libre', serif;
+    color: white;
+  }
+
+  .one{
+    float: left;
+    width: 25%;
+    margin-left: 35px;
+  }
+
+  .two{
+    width: 25%;
+    margin-left: 35px;
+  }
+
+  .three{
+    width: 25%;
+    margin-left: 44px;
+  }
+
+
+  #contact{
+    height:580px;
+    width: 100%;
+    background: linear-gradient(to top, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%);
+
+  }
+
+  #contact>h1{
+    font-size: 55px;
+    padding-top: 40px;
+    margin-left: 60px;
+    }
+
+  #contact>p{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 59px;
+    font-family: 'Frank Ruhl Libre', serif;
+
+    }
+  
+
+  .contacts{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 140px;
+  }
+
+  .contacts svg{
+    height: 30px;
+    width: 30px;
+    margin-top: 5px;
+    vertical-align: middle; /* Align the SVG vertically in the middle */
+  }
+
+  .email svg{
+    color: red;
+  }
+
+  .insta svg{
+    color: rgb(238, 0, 79);
+  }
+
+  .linkedin svg{
+    color: #00308F;
+  }
+
+  .contacts label{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 2em;
+    vertical-align: middle; /* Align the SVG vertically in the middle */
+    margin-left: 7px;
+  }
+
+  footer{
+    display: flex;
+    justify-content: center;
+    height: 25px;
+    background-color: #09203f;
+    color: white;
+
+  }
